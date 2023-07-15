@@ -1,7 +1,8 @@
 :root {
   --letraPrimaria: "Quattrocento", serif;
   --letraTextos: "Hind", sans-serif;
-  --colorPrimario: #213363;
+  --colorPrimario: #4665ba;
+  /* --colorPrimario: #213363; */
   --colorSecundario: #17594a;
   --colorTerciario: #8eac50;
   --colorCuartario: #d3d04f;
@@ -12,6 +13,23 @@
   color: var(--colorTerciario);
   font-family: var(--letraPrimaria);
   font-weight: 700;
+}
+
+.links__redes {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+  object-position: center center;
+  /* background-color: azure; */
+  border-radius: 100%;
+}
+
+.link__img {
+  border-radius: 100%;
+}
+
+.links__redes:hover {
+  box-shadow: 0 0 5px 2px #8eac50;
 }
 
 .header {
@@ -44,20 +62,21 @@
 .header__a {
   color: var(--colorCuartario);
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 0.4rem 1rem;
   transition: all 0.2s ease;
+  border-radius: 7px;
   /* background-color: aquamarine; */
 }
 
 .header__a:hover {
-  color: var(--colorTerciario);
+  color: #f2f2f2;
+
   /* border: 1px solid #d3d04f; */
 }
 
 .box__inline:hover {
   background-color: #d3d04f;
   color: #213363;
-  border-radius: 7px;
 }
 
 .hero {
@@ -85,6 +104,7 @@
   /* background-color: azure; */
   align-items: start;
   justify-content: center;
+  text-overflow: clip;
 }
 
 .container__img {
@@ -100,18 +120,6 @@
 
   justify-content: left;
   gap: 3rem;
-}
-
-.hero__link:hover .hero__img--link {
-  box-shadow: 0 0 5px 2px #8eac50;
-}
-
-.hero__img--link {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  object-position: center center;
-  /* background-color: azure; */
 }
 
 .hero__title {
@@ -250,18 +258,53 @@
 .container__card {
   overflow: hidden;
   width: 100%;
-  height: 200px;
+  min-height: 220px;
   position: relative;
   border-radius: 10px;
   /* background-color: aqua; */
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px 2px #213363;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.programas {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(141, 172, 80, 0.7);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.programa__usado {
+  margin: 0;
+
+  padding: 0.1rem 0.5rem;
+  color: #f2f2f2;
+  font-size: 0.8rem;
+
+  display: inline-block;
+
+  background-color: #4665ba;
+  border-radius: 7px;
+}
+
+.check__blue {
+  color: var(--colorCuartario);
+  font-size: 0.9rem;
 }
 
 .card__img {
   width: 100%;
   height: 100%;
   position: absolute;
+
   /* background-color: red; */
 }
 
@@ -271,12 +314,12 @@
 }
 
 .container__card:hover .card__hover {
-  top: 100px;
+  top: 0px;
   left: 0;
 }
 
 .container__card:hover {
-  box-shadow: 0 0 15px 2px #17594a;
+  box-shadow: 0 0 10px 1px --colorPrimario;
 }
 
 .container__card:hover .project__img {
@@ -290,8 +333,8 @@
 
 .card__hover {
   width: 100%;
-  height: 50%;
-  background-color: rgba(211, 209, 79, 0.5);
+  height: 30%;
+  background-color: rgba(141, 172, 80, 0.7);
   position: absolute;
   left: 100%;
   top: 200px;
@@ -299,11 +342,14 @@
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-out;
+  z-index: 2;
 }
 
 .hover__title {
   color: var(--colorPrimario);
   font-size: 2.2rem;
+  font-family: var(--letraTextos);
+  font-weight: 500;
 }
 
 .footer__portfolio {
@@ -351,10 +397,10 @@
 
 .red__link {
   transition: all 0.2s ease;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
-.red__link:hover .footer__red {
+.red__link:hover {
   box-shadow: 0 0 5px 2px #8eac50;
 }
 
