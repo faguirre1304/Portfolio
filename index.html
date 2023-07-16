@@ -20,7 +20,7 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header focus class="header">
       <nav class="header__nav">
         <ul class="header__ul--nav">
           <li class="header__li">
@@ -36,10 +36,15 @@
       </nav>
 
       <div class="hero">
-        <div class="hero__grid">
+        <div class="hero__flex">
           <div class="hero__textos">
-            <h1 class="hero__title title">I'm Francisco Aguirre</h1>
-            <p class="hero__paragraph">Desarrollador Web</p>
+            <h1 class="hero__title title">franciscoAguirre( ){</h1>
+            <p class="hero__paragraph">
+              <span class="intro__hero">console.log("</span>Desarrollador
+              Web<span class="intro__hero">");</span>
+            </p>
+            <span class="hero__title">}</span>
+
             <div class="hero__links--flex">
               <div class="hero__item--link">
                 <a href="" class="hero__link links__redes"
@@ -53,12 +58,15 @@
               </div>
             </div>
           </div>
-          <div class="container__img">
+          <div class="prueba__position">
             <img
-              class="img__hero"
-              src="media/hero.svg"
-              alt="escritorio trabajando"
+              class="img__position fadeInCenter"
+              src="media/Avatar.svg"
+              alt=""
             />
+
+            <div class="fondo1 fadeInLeft"></div>
+            <div class="fondo2 fadeInRight"></div>
           </div>
         </div>
       </div>
