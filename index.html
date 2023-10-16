@@ -35,7 +35,7 @@
         </ul>
       </nav>
 
-      <div class="hero">
+      <div class="hero container">
         <div class="hero__flex">
           <div class="fondo1 fadeInLeft"></div>
           <div class="fondo2 fadeInRight"></div>
@@ -66,9 +66,9 @@
         </div>
       </div>
     </header>
-    <main class="main container">
-      <section class="projects ocultar" id="projects">
-        <h2 class="projects__title title">Proyectos</h2>
+    <main class="main">
+      <section class="projects ocultar container" id="projects">
+        <h2 class="projects__title title">Projects</h2>
         <div class="projects__grid">
           <div class="container__card">
             <a
@@ -92,7 +92,7 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Portafolio</h3>
+                <h3 class="hover__title">Portfolio</h3>
               </div>
             </a>
           </div>
@@ -118,7 +118,7 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Empresa</h3>
+                <h3 class="hover__title">business Page</h3>
               </div>
             </a>
           </div>
@@ -148,7 +148,7 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Bootstrap</h3>
+                <h3 class="hover__title">Bootstrap Page</h3>
               </div>
             </a>
           </div>
@@ -174,7 +174,7 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Mondrian</h3>
+                <h3 class="hover__title">Mondrian Art</h3>
               </div>
             </a>
           </div>
@@ -204,7 +204,7 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Macontec</h3>
+                <h3 class="hover__title">Maconte business</h3>
               </div>
             </a>
           </div>
@@ -230,67 +230,115 @@
                 />
               </div>
               <div class="card__hover">
-                <h3 class="hover__title">Practica</h3>
+                <h3 class="hover__title">Practice</h3>
               </div>
             </a>
           </div>
         </div>
       </section>
       <section class="about" id="about">
-        <div class="about__grid">
-          <div class="about__card ocultar">
-            <div class="about__img">
-              <img src="media/mifoto.jpeg" alt="foto Francisco Aguirre" />
-            </div>
+        <div class="about__wave" style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+              style="stroke: none; fill: #213363"
+            ></path>
+          </svg>
+        </div>
+        <div class="about__container">
+          <div class="about__container--cards">
+            <div class="about__grid">
+              <div class="about__card ocultar">
+                <div class="about__card--text">
+                  <h2 class="about__title title">About me</h2>
+                  <p class="about__paragraph">
+                    I'm mechatronic engineer, I'm from Colombia, I like chill
+                    music and video games, Frontend developer was something I
+                    found looking for a hooby at first, but when I start to
+                    learn about this profession I loved it, sometimes is hard
+                    but the process is beautifull and greatfully. <br /><br />
 
-            <div class="about__card--text">
-              <h2 class="about__title title">Sobre mi</h2>
-              <p class="about__paragraph">
-                Soy ingeniero mecatronico, estoy empezando en el mundo del
-                desarrollo web con html, css y bootstrap,tambien he tenido algun
-                acercamiento a Javascript, React y en el area de backend con
-                mongoDB y MySql, el desarrollo web ha sido una gran experiencia
-                y disfruto cada momento al programar, espero seguir aprendiendo
-                muchas cosas y enseñarles todo mi proceso.
-              </p>
-            </div>
-          </div>
-          <div class="about__card skills ocultar">
-            <div class="about__text--skilss">
-              <h2 class="about__title title">Cursos</h2>
-              <ul class="about__skills">
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> MinTic2022
-                  -Diplomado / Fundamentos de programacion en Python
-                </li>
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> MinTic2022
-                  -Diplomado / Programacion basica en Java
-                </li>
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> MinTic2022
-                  -Desarrollo de Software
-                </li>
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> MinTic2022
-                  -Desarrollo de Aplicaciones Web
-                </li>
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> UDEMY / Curso
-                  diseño web moderno desde cero a avanzado HTML5 y CSS3
-                </li>
-                <li class="about__li--skills">
-                  <span class="skills__check">&#10004;</span> The Complete 2023
-                  Web Development Bootcamp
-                </li>
-              </ul>
+                    All the days I'm learning new things and that is a great
+                    moment, when I'm sit in front of my computer and I make some
+                    page or I add some functionality to my pages, sometimes is
+                    hard this process and stresfull but the end is the better
+                    sensation.
+                    <br /><br />
+
+                    I'll continue learning a lot of things about this profession
+                    every day, I hope to be one of the best web developer and
+                    teach other people about this great "Hobby".
+                  </p>
+                </div>
+              </div>
+              <div class="about__me ocultar">
+                <img
+                  class="about__me--img"
+                  src="media/Avatar.svg"
+                  alt="about me"
+                />
+              </div>
+              <div class="about__me ocultar">
+                <img
+                  class="about__me--img"
+                  src="media/avatar2.svg"
+                  alt="about me"
+                />
+              </div>
+              <div class="about__card skills ocultar">
+                <div class="about__text--skilss">
+                  <h2 class="about__title title">Courses</h2>
+                  <ul class="about__skills">
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> MinTic2022
+                      -Diplomado / Fundamentos de programacion en Python
+                    </li>
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> MinTic2022
+                      -Diplomado / Programacion basica en Java
+                    </li>
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> MinTic2022
+                      -Desarrollo de Software
+                    </li>
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> MinTic2022
+                      -Desarrollo de Aplicaciones Web
+                    </li>
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> UDEMY / Curso
+                      diseño web moderno desde cero a avanzado HTML5 y CSS3
+                    </li>
+                    <li class="about__li--skills">
+                      <span class="skills__check">&#10004;</span> The Complete
+                      2023 Web Development Bootcamp
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer__portfolio" id="footer">
-      <h2 class="title">Contacto</h2>
+      <div class="footer__wave" style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+            style="stroke: none; fill: #f2f2f2"
+          ></path>
+        </svg>
+      </div>
+      <h2 class="title">Contact</h2>
       <div class="footer__container">
         <div class="footer__texts">
           <p class="footer__email">
