@@ -553,89 +553,103 @@ body {
   background-color: var(--colorPrimarioClaro);
 }
 
-.programas {
-  position: absolute;
-  z-index: 1;
-  background-color: #c2c2c2;
-  bottom: 0;
-  left: 0;
+/*  */
+
+.cards {
+  padding: 2rem;
+}
+
+.cards__flex {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.card {
+  max-width: calc(400px - 2rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 3px #a0a0a0;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scaleY(1.01);
+  box-shadow: 0 0 15px 3px #a0a0a0;
+}
+
+.card img {
   width: 100%;
-  padding: 0.5rem;
+  min-height: 200px;
+  box-shadow: 0 5px 8px #a0a0a0;
+  z-index: 2;
+}
+
+.card h3 {
+  font-family: var(--letraPrimaria);
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: var(--colorPrimario);
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #213363;
+}
+
+.card__text {
+  display: flex;
+  gap: 1rem;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  /* background-color: #2bb594; */
+}
+
+.card__text a {
+  text-decoration: none;
+  width: 5rem;
+  text-align: center;
+  background-color: #213363;
+  padding: 0.3rem 0;
+  color: #f2f2f2;
+  font-size: 1.1rem;
+  font-family: var(--letraPrimaria);
+  letter-spacing: 0.1rem;
+  box-shadow: 0 5px 5px #a0a0a0;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card__text a:hover {
+  transform: scale(1.05);
+}
+
+.card__lenguages {
   display: flex;
   gap: 1rem;
 }
 
-.programa__usado {
-  margin: 0;
-
-  padding: 0.1rem 0.5rem;
+.used__program {
+  background-color: #213363;
+  padding: 0.1rem 0.4rem;
   color: #f2f2f2;
+  font-family: var(--letraTextos);
+  box-shadow: 0 5px 5px #a0a0a0;
   font-size: 0.8rem;
-
-  display: inline-block;
-
-  background-color: #4665ba;
-  border-radius: 7px;
+  letter-spacing: 0.1rem;
 }
 
-.check__blue {
-  color: var(--colorCuartario);
-  font-size: 0.9rem;
+.card__lenguages .skills__check {
+  color: #d3d04f;
+  font-size: 0.8rem;
 }
 
-.card__img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-  /* background-color: red; */
-}
-
-.project__link {
-  width: 100%;
-  height: 100%;
-}
-
-.card__hover {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(70, 101, 186, 0.7);
-  position: absolute;
-  left: 0;
-  top: 15%;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-
-.container__card:hover .card__hover {
-  top: 0;
-  left: 0;
-  opacity: 1;
-}
-
-.container__card:hover {
-  box-shadow: 0 0 25px #f2f2f2;
-}
-
-.container__card:hover .project__img {
-  transform: scale(1.1);
-}
-.project__img {
-  min-height: 100%;
-  transition: all 0.3s ease-in-out;
-  /* background-color: #d3d04f; */
-}
-
-.hover__title {
-  color: #c2c2c2;
-  font-size: 2.2rem;
-  font-family: var(--letraPrimaria);
-  font-weight: 500;
-}
+/*  */
 
 .footer__portfolio {
   position: relative;
