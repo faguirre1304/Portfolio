@@ -35,13 +35,18 @@
         </ul>
       </nav>
 
-      <div class="hero container">
-        <div class="hero__flex">
-          <div class="fondo1 fadeInLeft"></div>
-          <div class="fondo2 fadeInRight"></div>
+      <div class="hero">
+        <div class="hero__flex container">
           <div class="hero__textos fadeInLeftHeroTexts">
             <h1 class="hero__title title">Francisco Aguirre</h1>
-            <p class="hero__paragraph">Frontend Developer</p>
+            <p class="hero__paragraph">Front-end Developer</p>
+            <p class="text__hero">
+              I'm learning new things every day, and that's an amazing feeling.
+              When I sit in front of my computer and create a new page or add
+              functionality to my existing ones, I feel a sense of
+              accomplishment. Even though the process can be challenging and
+              stressful at times, the end result is always worth it.
+            </p>
 
             <div class="hero__links--flex">
               <div class="hero__item--link">
@@ -59,7 +64,7 @@
           <div class="hero__img">
             <img
               class="img__personal fadeInCenter"
-              src="media/mypicture.jpg"
+              src="media/mypicture-removebg-preview.png"
               alt=""
             />
           </div>
@@ -67,149 +72,170 @@
       </div>
     </header>
     <main class="main">
-      <section class="projects ocultar container" id="projects">
+      <section class="knowlegdge">
+        <div class="knowledge__flex">
+          <div class="box__knowledge"></div>
+          <div class="box__knowledge"></div>
+          <div class="box__knowledge"></div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
         <h2 class="projects__title title">Projects</h2>
-        <div class="cards">
-          <div class="cards__flex">
-            <div class="card">
-              <img src="media/burger week.png" alt="Burger Page" />
-              <div class="card__text">
-                <h3>Burger Page</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span>
-                    Javascript
-                  </p>
+        <div class="projects__container ocultar">
+          <div class="cards">
+            <div class="cards__flex">
+              <div class="card">
+                <img src="media/burger week.png" alt="Burger Page" />
+                <div class="card__text">
+                  <h3>Burger Page</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Javascript
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/PaginaHamburguesas/"
+                    class="project__link"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/PaginaHamburguesas/"
-                  class="project__link"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
-            </div>
-            <div class="card">
-              <img src="media/macontec.jpeg" alt="burger page" />
-              <div class="card__text">
-                <h3>Macontec Business</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
+              <div class="card">
+                <img src="media/macontec.jpeg" alt="burger page" />
+                <div class="card__text">
+                  <h3>Macontec Business</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/empresaMacontec/"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/empresaMacontec/"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
-            </div>
-            <div class="card">
-              <img src="media/tindog project.jpeg" alt="bootstrap page" />
-              <div class="card__text">
-                <h3>Bootstrap Page</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
+              <div class="card">
+                <img src="media/tindog project.jpeg" alt="bootstrap page" />
+                <div class="card__text">
+                  <h3>Bootstrap Page</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/tindog-bootstrap/"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/tindog-bootstrap/"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
-            </div>
-            <div class="card">
-              <img
-                src="media/portfolio screenshot.png"
-                alt="Francisco Portfolio"
-              />
-              <div class="card__text">
-                <h3>Portfolio</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span>
-                    Javascript
-                  </p>
+              <div class="card">
+                <img
+                  src="media/portfolio screenshot.png"
+                  alt="Francisco Portfolio"
+                />
+                <div class="card__text">
+                  <h3>Portfolio</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Javascript
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/Portfolio/"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/Portfolio/"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
-            </div>
-            <div class="card">
-              <img src="media/pagina css.png" alt="burger page" />
-              <div class="card__text">
-                <h3>Business Page</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span>
-                    Javascript
-                  </p>
+              <div class="card">
+                <img src="media/pagina css.png" alt="burger page" />
+                <div class="card__text">
+                  <h3>Business Page</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Javascript
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/businessPage/"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/businessPage/"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
-            </div>
-            <div class="card">
-              <img src="media/portafolio__practica.png" alt="burger page" />
-              <div class="card__text">
-                <h3>Portfolio Practice</h3>
-                <div class="card__lenguages">
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Html
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span> Css
-                  </p>
-                  <p class="used__program">
-                    <span class="skills__check check__blue">&#10004;</span>
-                    Javascript
-                  </p>
+              <div class="card">
+                <img src="media/portafolio__practica.png" alt="burger page" />
+                <div class="card__text">
+                  <h3>Portfolio Practice</h3>
+                  <div class="card__lenguages">
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Html
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Css
+                    </p>
+                    <p class="used__program">
+                      <span class="skills__check check__blue">&#10004;</span>
+                      Javascript
+                    </p>
+                  </div>
+                  <a
+                    href="https://faguirre1304.github.io/portafolio-practica/"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
-                <a
-                  href="https://faguirre1304.github.io/portafolio-practica/"
-                  target="_blank"
-                  >Visit</a
-                >
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="about" id="about">
-        <div class="about__wave" style="height: 150px; overflow: hidden">
+        <div class="wave__about" style="height: 150px; overflow: hidden">
           <svg
             viewBox="0 0 500 150"
             preserveAspectRatio="none"
@@ -221,77 +247,71 @@
             ></path>
           </svg>
         </div>
-        <div class="about__container">
-          <div class="about__container--cards">
-            <div class="about__grid">
-              <div class="about__card ocultar">
-                <div class="about__card--text">
-                  <h2 class="about__title title">About me</h2>
-                  <p class="about__paragraph">
-                    I'm a mechatronic engineer from Colombia. I like chill music
-                    and video games. I found front-end development as a hobby at
-                    first, but I loved it when I started to learn more about it.
-                    It's hard sometimes, but the process is beautiful and
-                    rewarding. <br /><br />
-
-                    I'm learning new things every day, and that's an amazing
-                    feeling. When I sit in front of my computer and create a new
-                    page or add functionality to my existing ones, I feel a
-                    sense of accomplishment. Even though the process can be
-                    challenging and stressful at times, the end result is always
-                    worth it.
-                    <br /><br />
-
-                    I'm committed to continuing to learn about front-end
-                    development every day. I hope to become one of the best web
-                    developers and teach others about this great "hobby."
-                  </p>
-                </div>
+        <div class="about__container ocultar">
+          <div class="about__box">
+            <div class="img__box">
+              <img src="media/Avatar.svg" alt="" />
+              <ul class="ul__box">
+                <li class="li__about">
+                  <span class="item__about">Nombre: </span> Francisco Aguirre
+                </li>
+                <li class="li__about">
+                  <span class="item__about">Age: </span> 35 years old
+                </li>
+                <li class="li__about">
+                  <span class="item__about">Nacionality: </span> Colombian
+                </li>
+                <li class="li__about">
+                  <span class="item__about">Residence: </span> Bogotá - Colombia
+                </li>
+                <li class="li__about">
+                  <span class="item__about">Degree: </span> Mechatronic Engineer
+                </li>
+              </ul>
+            </div>
+            <div class="text__box">
+              <div class="text__description">
+                <h2 class="about__title title">About me</h2>
+                <p class="about__paragraph">
+                  I like chill music and video games. I found front-end
+                  development as a hobby at first, but I loved it when I started
+                  to learn more about it. It's hard sometimes, but the process
+                  is beautiful and rewarding.
+                </p>
+                <p class="about__paragraph">
+                  I'm committed to continuing to learn about front-end
+                  development every day. I hope to become one of the best web
+                  developers and teach others about this great "hobby."
+                </p>
               </div>
-              <div class="about__me ocultar">
-                <img
-                  class="about__me--img"
-                  src="media/Avatar.svg"
-                  alt="about me"
-                />
-              </div>
-              <div class="about__me ocultar">
-                <img
-                  class="about__me--img"
-                  src="media/avatar2.svg"
-                  alt="about me"
-                />
-              </div>
-              <div class="about__card skills ocultar">
-                <div class="about__text--skilss">
-                  <h2 class="about__title title">Courses</h2>
-                  <ul class="about__skills">
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> MinTic2022
-                      -Diplomado / Fundamentos de programacion en Python
-                    </li>
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> MinTic2022
-                      -Diplomado / Programacion basica en Java
-                    </li>
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> MinTic2022
-                      -Desarrollo de Software
-                    </li>
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> MinTic2022
-                      -Desarrollo de Aplicaciones Web
-                    </li>
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> UDEMY / Curso
-                      diseño web moderno desde cero a avanzado HTML5 y CSS3
-                    </li>
-                    <li class="about__li--skills">
-                      <span class="skills__check">&#10004;</span> The Complete
-                      2023 Web Development Bootcamp
-                    </li>
-                  </ul>
-                </div>
+              <div class="text__skills">
+                <h2 class="about__title title">Courses</h2>
+                <ul class="about__skills">
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> MinTic2022
+                    -Diplomado / Fundamentos de programacion en Python
+                  </li>
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> MinTic2022
+                    -Diplomado / Programacion basica en Java
+                  </li>
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> MinTic2022
+                    -Desarrollo de Software
+                  </li>
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> MinTic2022
+                    -Desarrollo de Aplicaciones Web
+                  </li>
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> UDEMY / Curso
+                    diseño web moderno desde cero a avanzado HTML5 y CSS3
+                  </li>
+                  <li class="about__li--skills">
+                    <span class="skills__check">&#10004;</span> The Complete
+                    2023 Web Development Bootcamp
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
